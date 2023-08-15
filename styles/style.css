@@ -1,0 +1,290 @@
+*::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #121212;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #1DB954;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-corner {
+    background-color: black;
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.displayFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexRow {
+    flex-direction: row;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.header {
+    top: 0;
+    position: sticky;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    padding-right: 40px;
+    background-color: #121212;
+    color: white;
+    justify-content: space-between;
+    z-index: 1000;
+    /*border-bottom: solid 1px #1DB954;*/
+}
+
+.header nav ul {
+    gap: 20px;
+}
+
+.header nav ul li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.header nav ul .icon {
+    color: #1DB954;
+    font-size: 25px;
+}
+
+.header nav ul li:hover {
+    border-bottom: solid 2px #1DB954;
+}
+
+.main {
+    background-color: #171717;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.primary-color {
+    border-radius: 10px;
+    background-color: #121212;
+}
+
+.secondary-color {
+    border-radius: 10px;
+    background-color: #222222;
+}
+
+.controlls {
+    flex: 1;
+    height: 100vh;
+    justify-content: start;
+    padding: 10px;
+}
+
+.controlls .redirect-section {
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    padding-bottom: 25px;
+    border-bottom: solid 1px #1DB954;
+}
+
+.controlls .redirect-section .row-redirect {
+    width: 100%;
+    gap: 30px;
+    justify-content: start;
+    font-size: 20px;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.controlls .redirect-section .row-redirect:hover {
+    border-right: solid 3px #1DB954;
+    background-color: #202020;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.controlls .redirect-section .row-redirect .icon {
+    color: #1DB954;
+    font-size: 25px;
+}
+
+.controlls .playlists-list {
+    margin-top: 20px;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+}
+
+.controlls .playlists-list .playlist-row {
+    gap: 20px;
+    background-color: #151515;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    justify-content: start;
+    height: 60px;
+    cursor: pointer;
+}
+
+.controlls .playlists-list .playlist-row:hover {
+    background-color: #202020;
+}
+
+.controlls .playlists-list .playlist-row .icon {
+    color: #1DB954;
+}
+
+.playlist {
+    justify-content: start;
+    flex: 2;
+    height: 100vh;
+    padding: 10px;
+}
+
+.current-playlist {
+    top: 0;
+    position: sticky;
+    padding: 10px;
+    justify-content: start;
+
+    background: rgb(242, 173, 25);
+    background: linear-gradient(90deg, rgb(242, 173, 25) 0%, rgb(227, 227, 227) 100%);
+
+    border-radius: 20px;
+    height: 250px;
+    width: 100%;
+    gap: 40px;
+}
+
+.playlist-image {
+    background-image: url('../images/album.jpg');
+    background-size: cover;
+    background-position: right;
+    height: 100%;
+    width: 220px;
+    border-radius: 20px;
+}
+
+.playlist-info {
+    height: 100%;
+    color: #121212;
+    justify-content: space-between;
+}
+
+.playlist-info .name {
+    flex: 1;
+    text-align: start;
+    font-size: 23px;
+    border-bottom: solid 3px #121212;
+}
+
+.playlist-info .controlls {
+    flex: 1;
+    gap: 20px;
+    font-size: 30px;
+    justify-content: start;
+    width: 100%;
+}
+
+.playlist-info .controlls .icon {
+    cursor: pointer;
+}
+
+.playlist-list {
+    padding-right: 10px;
+    margin-top: 20px;
+    width: 100%;
+    gap: 8px;
+    overflow: auto;
+}
+
+.playlist-music {
+    background-color: #151515;
+    padding: 10px;
+    width: 100%;
+    height: 65px;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.playlist-music .name-logo {
+    height: 100%;
+    gap: 22px;
+}
+
+.playlist-music .music-name {
+    font-size: 22px;
+}
+
+.playlist-music-controlls {
+    gap: 23px;
+}
+
+.playlist-music-controlls .icon {
+    color: #1DB954;
+    font-size: 30px;
+}
+
+.avatar-music {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.music {
+    flex: 1;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 60px;
+    background-image: url('../images/fundo-wave.svg');
+}
+
+.music .music-info {
+    flex: 1;
+    gap: 40px;
+    border-bottom: solid 4px #1DB954;
+}
+
+.music .music-info .music-image {
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    background-image: url('../images/avatar.jpg');
+}
+
+.music .music-info .music-name {
+    font-size: 20px;
+}
+
+.music .music-controlls {
+    flex: 1;
+    color: white;
+    justify-content: start;
+}
+
+.music .music-controlls .controlls {
+    gap: 30px;
+}
+
+.music .music-controlls .controlls .icon {
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
